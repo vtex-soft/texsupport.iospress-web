@@ -9,7 +9,7 @@
 
 %% Article Info
 \firstpage{1}
-\lastpage{6}
+\lastpage{4}
 \volume{1}
 \pubyear{2021}
 
@@ -115,7 +115,7 @@ your document (i.e. commands like \verb|\textheight|,
 \subsection{Font}
 
 For literal text, please use
-\texttt{type\-writer} (\verb|\texttt{}|)
+\texttt{type\-writer}\break (\verb|\texttt{}|)
 or \textsf{sans serif} (\verb|\textsf{}|). \emph{Italic} (\verb|\emph{}|)
 or \textbf{boldface} (\verb|\textbf{}|) should be used for emphasis.
 
@@ -137,7 +137,7 @@ Use class option ``\texttt{crcready}'' in order to remove the page numbers from 
 
 Use sentence case for the title.
 
-Use \verb|\thanks{}| command for footnotes in \verb|\title|
+Use \verb|\thanks{}| command for footnotes in\break \verb|\title|
 and \verb|\author| commands.
 
 Do not use capitals for author's surname.
@@ -169,6 +169,24 @@ accumulated list corresponds to the citations made in the text body.
 \caption{Figure caption.}
 \end{figure}
 
+\begin{table*}
+\caption{Table caption} \label{t1}
+\begin{tabular}{@{}ll d{1.3} d{1.3} d{1.3} d{1.3} d{1.3} d{1.3}@{}}
+\hline
+Dataset&Models&\multicolumn{1}{c}{$\alpha_1$}&
+\multicolumn{1}{c}{$\alpha_2$}&
+\multicolumn{1}{c}{$\alpha_3$}&
+\multicolumn{1}{c}{$\alpha_4$}&
+\multicolumn{1}{c}{$\alpha_5$}&
+\multicolumn{1}{c}{$\alpha_6$}\\
+\hline
+CSDS&Linear     &0.164&0.22&0.123&0.3&0.200&0.258\\
+& Logistic      &0.189&0.155&0.157&0.201&0.154&0.144\\[6pt]
+KCDS&Linear     &0.155&0.183&0.160&0.218&0.176&0.156\\
+& Logistic      &0.187&0.125&0.151&0.184&0.187&0.125\\
+\hline
+\end{tabular}
+\end{table*}
 
 \subsection{Figures}
 \subsubsection{General remarks on figures}
@@ -246,26 +264,6 @@ Tables should be presented in the form shown in
 Table~\ref{t1}.  Their layout should be consistent
 throughout.
 
-\begin{table*}[htb]
-\caption{Table caption} \label{t1}
-\begin{tabular}{@{}ll d{1.3} d{1.3} d{1.3} d{1.3} d{1.3} d{1.3}@{}}
-\hline
-Dataset&Models&\multicolumn{1}{c}{$\alpha_1$}&
-\multicolumn{1}{c}{$\alpha_2$}&
-\multicolumn{1}{c}{$\alpha_3$}&
-\multicolumn{1}{c}{$\alpha_4$}&
-\multicolumn{1}{c}{$\alpha_5$}&
-\multicolumn{1}{c}{$\alpha_6$}\\
-\hline
-CSDS&Linear     &0.164&0.22&0.123&0.3&0.200&0.258\\
-& Logistic      &0.189&0.155&0.157&0.201&0.154&0.144\\[6pt]
-KCDS&Linear     &0.155&0.183&0.160&0.218&0.176&0.156\\
-& Logistic      &0.187&0.125&0.151&0.184&0.187&0.125\\
-\hline
-\end{tabular}
-\end{table*}
-
-
 
 \subsection{Equations}
 
@@ -291,14 +289,14 @@ Use \verb|\runtitle{}| command to insert short title that will appear at the top
 Submit the following to the journal Editorial office, online submission form or Editor-in-Chief (whichever is applicable for the journal):
 
 \begin{enumerate}
-\item The main \LaTeX{} document as well as other required files (png, etc.).
+\item The main \LaTeX{} document as well as other required files.
 \item PDF version of the \LaTeX{} file.
 \item Please make sure you do not submit more than one version of any item.
 \end{enumerate}
 
 
 \begin{acks}
-Please include your acknowledgements in \verb|acks| environment. For short acknowledgment you may use \verb|ack| environment.
+Please include your acknowledgements in \verb|acks| environment. For short acknowledgment you may use \verb|ack| environment.\vspace*{-\baselineskip}
 \end{acks}
 
 \begin{appendix}
@@ -309,7 +307,7 @@ Appendices should be provided in \verb|appendix| environment, before References.
 Use the standard \LaTeX{} commands for headings in Appendix.
 
 \subsection{Second subsection}
-Headings will be automatically numbered. 
+Headings will be automatically numbered.
 \end{appendix}
 
 
