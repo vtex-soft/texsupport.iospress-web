@@ -70,8 +70,8 @@
 %%
 
 \def\fmt@name{iosart2x}
-\def\fmt@date{2021/05/31}
-\def\fmt@version{1.3.33}
+\def\fmt@date{2021/06/07}
+\def\fmt@version{1.3.34}
 \NeedsTeXFormat{LaTeX2e}[2000/01/26]
 \ProvidesClass\fmt@name
               [\fmt@date\space v\fmt@version\space IOS Press]
@@ -224,7 +224,7 @@
   \gdef\@eissn{2405-6464}%
   \gdef\@price{35.00}%
   \gdef\@journal{Web Intelligence}%
-  \global\@twocolumntrue
+  \global\@twocolumnfalse \global\@restonecoltrue
   \gdef\ios@journal@layout{0}%
   }
 \DeclareOption{acs}{%
@@ -1179,6 +1179,9 @@
 \def\init@ios@journal@SW@settings{%
   \b@author@skip=-2\p@
   \dsreview@postskip=6\p@
+  \AtEndOfClass{\mathindent=2em}%
+  }
+\def\init@ios@journal@WEB@settings{%
   \AtEndOfClass{\mathindent=2em}%
   }
 \def\init@ios@journal@SAT@settings{%
